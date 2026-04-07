@@ -5,26 +5,18 @@
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   src: url(https://practicum-content.s3.us-west-1.amazonaws.com/frontend-developer/responsive/moved_Inter-Bold.woff2);
   font-weight: bold;
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #2a2c2f;
   max-width: 1280px;
-  margin: auto;
-  font-family: 'Inter';
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
+  font-family: "Inter";
+  margin: 0 auto;
+  min-width: 320px;
+  color: #ffffff;
 }
 
 h1,
@@ -46,22 +38,33 @@ footer {
   justify-content: center;
   gap: 16px;
   font-family: Inter;
+  width: 100%;
 }
 
 .header__logo {
-  width: 120px;
-  height: auto;
+  width: 254px;
+  height: 66px;
 }
 
-.header__title {
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+}
+
+.main__title {
   font-weight: 900;
   font-size: 96px;
   line-height: 100px;
   letter-spacing: 0%;
   text-align: center;
+  width: 100%;
 }
 
-.header__subtitle {
+.main__subtitle {
   font-family: Inter;
   font-weight: 400;
   font-size: 24px;
@@ -70,21 +73,23 @@ footer {
   text-align: center;
 }
 
-.header__landscape {
-  max-width: 984px;
-  max-height: 615px;
-  top: 562px;
-  left: 148px;
-  opacity: 1;
-  
+.main__landscape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 80%;
 }
 
-.header__landscape-image {
+.main__landscape-image {
+  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
-.header__landscape-title {
+.main__landscape-title {
   font-family: Inter;
   font-weight: 900;
   font-size: 54px;
@@ -92,7 +97,7 @@ footer {
   letter-spacing: 0%;
 }
 
-.header__landscape-subtitle {
+.main__landscape-subtitle {
   font-family: Inter;
   font-weight: 400;
   font-size: 24px;
@@ -100,7 +105,7 @@ footer {
   letter-spacing: 0%;
 }
 
-.header__landscape-author {
+.main__landscape-author {
   font-family: Inter;
   font-weight: 400;
   font-size: 24px;
@@ -109,7 +114,7 @@ footer {
   text-align: right;
 }
 
-.header__landscape-paragraph {
+.main__landscape-paragraph {
   font-family: Inter;
   font-weight: 400;
   font-size: 16px;
@@ -117,7 +122,7 @@ footer {
   letter-spacing: 0%;
 }
 
-.header__footer-paragraph {
+.footer__credits {
   font-family: Inter;
   font-weight: 400;
   font-size: 14px;
@@ -127,53 +132,17 @@ footer {
 }
 
 @media screen and (max-width: 1280px) {
-  {
-    width: 100%; }
-    .header {
-      width: 100%;
-      margin-bottom: 32px;
-    }
-
-  }
-  .page {
-    padding: 0 16px;
-  }
-
-  .header__title {
-    font-size: 48px;
-    line-height: 52px;
-  }
-
-  .header__subtitle {
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  .header__landscape {
+  .header {
     max-width: 100%;
-    height: auto;
-  }
-  .header__landscape-title {
-    font-size: 32px;
-    line-height: 36px;
+    margin-bottom: 32px;
   }
 
-  .header__landscape-subtitle {
-    font-size: 18px;
-    line-height: 28px;
-  }     
-
-  .header__landscape-author {
-    font-size: 18px;
-    line-height: 28px;
+  .main__landscape {
+    max-width: 100%;
   }
 
-  .header__landscape-paragraph {
-    font-size: 14px;
-    line-height: 20px;
+  .main__landscape-image {
+    max-width: 100%;
+    max-height: 100%;
   }
-  .header__footer-paragraph {
-    font-size: 12px;
-    line-height: 14px;
-  }
-
+}
