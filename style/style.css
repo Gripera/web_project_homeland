@@ -14,9 +14,9 @@
   background-color: #2a2c2f;
   max-width: 1280px;
   font-family: "Inter";
-  margin: 0 auto;
   min-width: 320px;
   color: #ffffff;
+  margin: auto;
 }
 
 h1,
@@ -26,24 +26,23 @@ h4,
 h5,
 h6,
 footer {
-  margin: 0;
   color: #ffffff;
   font-family: Inter;
 }
 
 .header {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  font-family: Inter;
-  width: 100%;
 }
 
 .header__logo {
   width: 254px;
   height: 66px;
+  margin-bottom: 90px;
+  margin-top: 32px;
 }
 
 .main {
@@ -51,6 +50,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: Inter;
   gap: 48px;
   width: 100%;
 }
@@ -79,7 +79,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 32px;
-  width: 80%;
+  width: 100%;
 }
 
 .main__landscape-image {
@@ -128,13 +128,45 @@ footer {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0%;
-  text-align: right;
+  text-align: center;
 }
 
 @media screen and (max-width: 1280px) {
   .header {
     max-width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 90px;
+  }
+
+  .main__landscape {
+    max-width: 100%;
+  }
+
+  .main__landscape-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 100%;
+    margin-bottom: 90px;
+  }
+
+  .main__landscape {
+    max-width: 100%;
+  }
+
+  .main__landscape-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    max-width: 100%;
+    margin-bottom: 90px;
   }
 
   .main__landscape {
