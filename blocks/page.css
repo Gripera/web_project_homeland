@@ -1,0 +1,110 @@
+.page {
+  background-color: #2a2c2f;
+  max-width: 1280px;
+  font-family: "Inter";
+  min-width: 320px;
+  color: #ffffff;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer {
+  color: #ffffff;
+  font-family: Inter;
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    max-width: 100%;
+  }
+
+  .main {
+    max-width: 100%;
+  }
+
+  .main__landscape {
+    max-width: 100%;
+  }
+
+  .main__landscape-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .main {
+    max-width: 100%;
+  }
+
+  .main__landscape {
+    max-width: 100%;
+    line-height: 60%;
+  }
+
+  .main__landscape-image {
+    max-width: 100%;
+    max-height: 100%;
+    max-width: 768px;
+    max-height: 480px;
+  }
+
+  .main__landscape-title {
+    margin-left: 24px;
+  }
+
+  .main__landscape-subtitle {
+    margin-left: 24px;
+  }
+
+  .main__landscape-paragraph {
+    margin-left: 24px;
+  }
+
+  .
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .main {
+    max-width: 100%;
+  }
+
+  .main__landscape {
+    max-width: 100%;
+    line-height: 30%;
+  }
+
+  .main__landscape-image {
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+
+ .main__landscape-title {
+    margin-left: 16px;
+  }
+
+  .main__landscape-subtitle {
+    margin-left: 16px;
+  }
+
+  .main__landscape-paragraph {
+    margin-left: 16px;
+  }
+
+}
