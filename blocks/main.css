@@ -1,4 +1,4 @@
-.main {
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.main__title {
+.content__title {
   font-weight: 900;
   font-size: 96px;
   line-height: 100px;
@@ -17,7 +17,7 @@
   width: 100%;
 }
 
-.main__subtitle {
+.content__subtitle {
   font-family: Inter;
   font-weight: 400;
   font-size: 24px;
@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-.main__landscape {
+.content__landscape {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +35,7 @@
   width: 100%;
 }
 
-.main__landscape-image {
+.content__landscape-image {
   display: block;
   width: 100%;
   height: 100%;
@@ -53,7 +53,7 @@
   margin-left: 148px;
 }
 
-.main__landscape-subtitle {
+.content__landscape-subtitle {
   font-family: Inter;
   font-weight: 400;
   font-size: 24px;
@@ -62,7 +62,7 @@
   margin-left: 148px;
 }
 
-.main__landscape-author {
+.content__landscape-author {
   font-family: Inter;
   font-weight: 400;
   font-size: 24px;
@@ -71,7 +71,7 @@
   text-align: right;
 }
 
-.main__landscape-paragraph {
+.content__landscape-paragraph {
   font-family: Inter;
   font-weight: 400;
   font-size: 16px;
@@ -83,15 +83,15 @@
 
 @media screen and (max-width: 1280px) {
 
-  .main {
+  .content {
     max-width: 100%;
   }
 
-  .main__landscape {
+  .content__landscape {
     max-width: 100%;
   }
 
-  .main__landscape-image {
+  .content__landscape-image {
     max-width: 100%;
     max-height: 100%;
   }
@@ -99,31 +99,31 @@
 
 @media screen and (max-width: 768px) {
 
-  .main {
+  .content {
     max-width: 100%;
   }
 
-  .main__landscape {
+  .content__landscape {
     max-width: 100%;
     line-height: 60%;
   }
 
-  .main__landscape-image {
+  .content__landscape-image {
     max-width: 100%;
     max-height: 100%;
     max-width: 768px;
     max-height: 480px;
   }
 
-  .main__landscape-title {
+  .content__landscape-title {
     margin-left: 24px;
   }
 
-  .main__landscape-subtitle {
+  .content__landscape-subtitle {
     margin-left: 24px;
   }
 
-  .main__landscape-paragraph {
+  .content__landscape-paragraph {
     margin-left: 24px;
   }
 
@@ -132,30 +132,30 @@
 
 @media screen and (max-width: 320px) {
 
-  .main {
+  .content {
     max-width: 100%;
   }
 
-  .main__landscape {
+  .content__landscape {
     max-width: 100%;
     line-height: 30%;
   }
 
-  .main__landscape-image {
+  .content__landscape-image {
     max-width: 100%;
     max-height: 100%;
 
   }
 
- .main__landscape-title {
+ .content__landscape-title {
     margin-left: 16px;
   }
 
-  .main__landscape-subtitle {
+  .content__landscape-subtitle {
     margin-left: 16px;
   }
 
-  .main__landscape-paragraph {
+  .content__landscape-paragraph {
     margin-left: 16px;
   }
 
