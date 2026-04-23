@@ -1,7 +1,8 @@
 .body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
 }
 
 h1,
@@ -12,5 +13,5 @@ h5,
 h6,
 footer {
   color: #ffffff;
-  font-family: Inter;
+  font-family: Inter, "sans-serif";
 }
