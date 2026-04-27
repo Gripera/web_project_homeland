@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  overflow: hidden;
+  background-color: #2a2c2f;
 }
 
 h1,
