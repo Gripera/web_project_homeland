@@ -1,0 +1,67 @@
+.profiles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding: 100px;
+}
+
+.profiles__profile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  background-color: #2a2c2f;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.profiles__profile-title {
+  font-family: Inter;
+  font-size: 72px;
+  font-weight: 900;
+  max-width: 460px;
+  color: white;
+  line-height: 76px;
+  grid-column: span 1;
+  grid-row: span 2;
+  bottom: 48px;
+}
+
+.profiles__profile-image {
+  max-width: 460px;
+  height: auto;
+  grid-column: span 1
+  grid-row: span 3;
+  bottom: 48px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 356.08px;
+  height: 48px;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.profiles__profile-role {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  color: #AAAAA;
+  line-height: 100%;
+  letter-spacing: 12%;
+  grid-column: span 2;
+  grid-row: span 1;
+}
