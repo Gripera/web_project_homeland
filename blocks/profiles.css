@@ -100,7 +100,13 @@
   margin-left: 40px;
 }
 
-@media screen and (max-width: 1024px) @media screen and (max-width: 544px) {
+@media screen and (max-width: 1024px) {
+  .profiles {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 544px) {
   .profiles__profile {
     display: grid;
     grid-template-columns: 1fr;
