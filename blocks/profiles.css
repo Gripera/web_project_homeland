@@ -3,8 +3,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 148px;
-  margin-right: 148px;
+  max-width: 984px;
+  margin: 0 auto;
 }
 
 .profiles__profile {
@@ -100,128 +100,11 @@
   margin-left: 40px;
 }
 
-@media screen and (max-width: 1280px) {
-  .profiles__profile {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) @media screen and (max-width: 544px) {
   .profiles__profile {
     display: grid;
-    grid-template-columns: 340px auto;
-    grid-template-rows: auto 340px auto;
-    grid-template-areas: "title artists" "image paragraph" "button paragraph";
-    background-color: #2a2c2f;
-    margin-top: 92px;
-    max-width: 340px;
-  }
-
-  .profiles__profile-title {
-    font-size: 42px;
-    line-height: 46px;
-    max-width: 340px;
-  }
-
-  .profiles__profile-image {
-    max-width: 340px;
-  }
-
-  .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    box-shadow: 10px 10px 25px 0px #00000080;
-    width: 356.08px;
-    height: 48px;
-    margin-top: 48px;
-    grid-area: button;
-  }
-}
-
-.profiles__artists {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  grid-area: artists;
-}
-
-.profiles__profile-role {
-  font-family: Inter;
-  font-size: 12px;
-  font-weight: 400;
-  color: #aaaaaa;
-  line-height: 100%;
-  letter-spacing: 12%;
-  margin-bottom: 8px;
-  margin-left: 20px;
-  grid-area: artists;
-}
-
-.profiles__profile-name {
-  font-family: Inter;
-  font-size: 18px;
-  font-weight: 400;
-  color: white;
-  line-height: 22px;
-  letter-spacing: 0%;
-  margin-left: 20px;
-  grid-area: artists;
-}
-
-.profiles__paragraphs {
-  grid-area: paragraph;
-  margin-left: 20px;
-}
-
-.profiles__profile-description {
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-  color: white;
-  line-height: 163%;
-  letter-spacing: 0%;
-  margin-left: 20px;
-}
-
-@media screen and (max-width: 320px) {
-  .profiles__profile {
-    display: grid;
-    grid-template-columns: 320px;
-    grid-template-rows: auto;
-    grid-template-areas: "title" "artists" "image" "paragraph" "button";
-    background-color: #2a2c2f;
-    margin-top: 92px;
-    max-width: 320px;
-  }
-
-  .profiles__profile {
-    max-width: 320px;
     grid-template-columns: 1fr;
-    grid-template-rows: (auto);
-  }
-
-  .profiles__profile-title {
-    font-size: 32px;
-    line-height: 35px;
-    max-width: 100%;
-  }
-
-  .profiles__profile-image {
-    max-width: 100%;
-    top: auto;
-    left: auto;
-    box-shadow: none;
-  }
-
-  .button {
-    width: 288px;
-    height: 48px;
-    padding: 18px 8%;
-    box-shadow: none;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "title" "artists" "image" "paragraph" "button";
   }
 }

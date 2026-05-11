@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 1280px) {
   .gallery__image {
-    max-width: 284px;
+    max-width: 100%;
     max-height: auto;
   }
 }
@@ -26,7 +26,7 @@
   }
 
   .gallery__image {
-    max-width: 352px;
+    max-width: 123.94%;
     max-height: auto;
     padding: 8px;
   }
@@ -39,7 +39,7 @@
   }
 
   .gallery__image {
-    max-width: 288px;
+    max-width: 101.4px;
     max-height: auto;
     padding: 4px;
   }
