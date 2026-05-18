@@ -4,12 +4,12 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  gap: 16px;
 }
 
 .gallery__image {
   max-width: 284px;
-  max-height: 213px;
-  padding: 16px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -19,28 +19,21 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
   }
 
   .gallery__image {
-    max-width: 123.94%;
+    max-width: 100%;
     max-height: auto;
-    padding: 8px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 544px) {
   .gallery {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
-  }
-
-  .gallery__image {
-    max-width: 101.4px;
-    max-height: auto;
-    padding: 4px;
   }
 }
